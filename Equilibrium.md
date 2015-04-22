@@ -8,7 +8,7 @@ Assume that we now have a very small cluster with only two Device Agents: the Fr
 
 **Figure 1: A very small PowerMatcher Cluster.**
 
-The Auctioneer receives an Aggregated Bid similar to the Bid in [[Aggregation|Aggregation]]:
+The Auctioneer receives an Aggregated Bid similar to the Bid in [Aggregation](Aggregation.md):
 
 ![AggregatedBid](AggregatedBid1.png)
 
