@@ -77,7 +77,7 @@ You can add new agents to the Visualisation plug-in. To do this, go back to the 
 menu-title::fpid-of-agent
 ```
 
-In the [Creating a Device Agent](../CreationOfDeviceAgent) section, we added a wind turbine, let's add it to this menu and put one in the cluster. So add the line
+In the [Creating a Device Agent](CreationOfDeviceAgent.md) section, we added a wind turbine, let's add it to this menu and put one in the cluster. So add the line
 
 ```
 DeviceAgent::net.PowerMatcher.examples.WindTurbine

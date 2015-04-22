@@ -69,7 +69,7 @@ Now we get to the actual functionality of our `WindTurbine`: sending `Bids`and r
 To send Bids, we will implements `doBidUpdate()`. The basic functionality of this method is to create a `Bid` and send that bid to a `MatcherEndpoint` through the `Session`. For the purposes of this demo, we will be sending randomly generated bids. But in a real Device Agent; new Bids will often be the result due a change in the state of the Device...so if the Wind will start blowing harder it will want to offer more Power to the market: hence the maximumDemand will probably coupled to the Power Output of the Windmill in some way.....see [Device Agent Bids](Bids.md).  
 
 1. Use the generator to create a random demand, based on the `minimumDemand` and the  `maximumDemand`
-2. Create a PointBid using the `Builder` pattern to construct the `Bid` out of two `PricePoints` (Price, Demand) (see [Data Objects](DataObjects)
+2. Create a PointBid using the `Builder` pattern to construct the `Bid` out of two `PricePoints` (Price, Demand) (see [Bids & Prices](DataObjects.md))
 3. Publish the Bid. `publishBid()` is defined in BaseAgentEndpoint and makes sure that the Bid gets a unique bidNumber, it sends an `OutgoingBidUpdateEvent` to all `Observers` of this `WindTurbine` instance, and send the Bid to its `MatcherEndpoint` through the `Session`. 
 
 ```

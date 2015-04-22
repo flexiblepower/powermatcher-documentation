@@ -106,6 +106,5 @@ The `pvpanel` recieves an updated price from the `concentrator` and notifies all
 Adding a second PVPanel to our cluster is easy. Go back to the configuration manager and once again, click on the + button on the `Freezer config` line. This one will also have a timeout of 10 seconds. As usual, you can leave the rest of the defaults.
 
 ![Configuring the Freezer](pvpanel2_config.png)
-Then all we have to do is add this new session to the session manager:
 
 Now you have a cluster with both a PvPanel and a Freezer as device Agents

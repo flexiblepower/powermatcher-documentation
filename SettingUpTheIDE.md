@@ -82,4 +82,4 @@ Click on the `Browse` button on top of the screen. It will automatically go to t
 Finally, we have to select the Bndtools perspective. A perspective is a configuration of the Eclipse user interface which is made for a specific tasks. You can select a perspective by clicking `Window`, `Open perspective` and than `Other...`. Double click on `Bndtools` to open the Bndtools perspective. You can close the welcome window of eclipse, and tick the box not to show again.
 
 ## Next
-You're all set to start developing! Be sure to check out [OSGi, Bndtools and the Felix Web Console](OSGi) and [Coding Conventions](CodingConventions.md) before developing.
+You're all set to start developing! Be sure to check out [OSGi, Bndtools and the Felix Web Console](OSGi.md) and [Coding Conventions](CodingConventions.md) before developing.
