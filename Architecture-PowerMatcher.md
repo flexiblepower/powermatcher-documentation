@@ -58,3 +58,9 @@ Lastly, the concentrator can be used to manipulate the children agents that are 
 ## The Objective Agent
 
 The objective agent gives a cluster its purpose. The objective agent **interfaces to the business logic** behind the specific application.  When the objective agent is absent, the goal of the cluster is to balance itself, i.e., it strives for an equal supply and demand within the cluster itself. Depending on the specific application, the goal of the cluster might be different. If the cluster has to operate as a virtual power plant, for example, it needs to follow a certain externally provided setpoint schedule. Such an externally imposed objective can be realized by implementing an objective agent. Other couplings could be with the energy trading market, external optimization algorithms etc.
+
+# Other Demand Response Systems
+
+Important to understand is that The PowerMatcher always optimizes the current state based on the latest information. 
+
+Other Demand Response systems often work based on some central optimization algorithm that executes three steps: Forecasting, Scheduling and Real Time Coordination. In the PowerMatcher core we focus on Real Time Coordination, we believe that Forecasting and Scheduling can be performed locally by each individual agent; which results in much more complex dynamics.

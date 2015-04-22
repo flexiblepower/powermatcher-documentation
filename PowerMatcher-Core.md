@@ -24,11 +24,11 @@ The Inheritence and foundation of all Agents is depicted in Figure 1:
 
 The section [Device Agent Bids](Bids.md) explains the basic functionality of a Device Agent.
 
-The section [Aggregation](](Aggregation.md) explains about Bid Aggregation.
+The section [Aggregation](Aggregation.md) explains about Bid Aggregation.
 
 The section [Peak Shaving](PeakShaving.md) explains how the PowerMatcher can tackle grid congestion.
 
 The section [Equilibrium Price](Equilibrium.md) explains how the Auctioneer balances the market. 
 
-The section [Cluster Objectives](Objective.md explains how the PowerMatcher can receive Objectives.
+The section [Cluster Objectives](Objective.md) explains how the PowerMatcher can receive Objectives.
 
