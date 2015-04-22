@@ -24,4 +24,4 @@ In the PowerMatcher protocol **a Bid** describes the device's **entire demand or
 
 # EF-Pi integration 
 
-If you want to make your life easier; after studying the concepts of the PowerMatcher it is advised to look into EF-Pi. EF-Pi will greatly reduce you effort in connecting devices.
+If you want to make your life easier; after studying the concepts of the PowerMatcher it is advised to look into [EF-Pi](EFPi_PM.md). EF-Pi will greatly reduce you effort in connecting devices.
