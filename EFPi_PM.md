@@ -1,6 +1,6 @@
 # EF-Pi & PowerMatcher integration
 
-In [Device Agent Bids](Bids) we have explained how an Agent represents a smart device in the PowerMatcher ecosystem:
+In [Device Agent Bids](Bids.md) we have explained how an Agent represents a smart device in the PowerMatcher ecosystem:
 
 ![](DeviceAgentControl1.png)
 
@@ -8,7 +8,7 @@ But as you can see there needs to be a bi-directional connection between the Dev
 
 The EF-Pi solution lays a cut in this bi-directional communication and implements the "Energy Flexibility Interface", "EFI"in short, which is positioned in between the smart device and the agent.
 
-![](Picture.png)
+![](DeviceAgentEFI.png)
 
 Why?
 
@@ -23,6 +23,6 @@ The EFI defines four abstract type of devices in a holistic energy system. These
 3. [Timeshifter](http://fpai-ci.sensorlab.tno.nl/builds/fpai-documentation/v14.10/html/TimeshiftableEFI.html), e.g. a washing maschine, industrial heater
 4. [Buffer](http://fpai-ci.sensorlab.tno.nl/builds/fpai-documentation/v14.10/html/BufferStorageEFI.html), e.g. a battery, a freezer
 
-What this means is that the PowerMatcher can get away with 4 simple agents that map to each of these abstractions. For instance in the case of the Timeshifter; the PowerMatcher doesn't care whether it is an industrial heater or washing machine. To the PowerMatcher the device is a "timeshifter" and accordingly has some business logic to develop a Bid that represents the Timeshifter. 
+What this means is that the PowerMatcher can get away with 4 simple agents that map to each of these abstractions. For instance in the case of the Timeshifter; the PowerMatcher doesn't care whether it is an industrial heater or washing machine. To the PowerMatcher the device is a "Timeshifter" and accordingly has some business logic to develop a Bid that represents the Timeshifter. 
 
 The device agents that specifically map to the EF-Pi abstractions can be found in this [Repo](https://github.com/flexiblepower/fpai-apps/tree/development/net.powermatcher.fpai.controller/src/net/powermatcher/fpai/agents)

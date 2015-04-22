@@ -1,14 +1,14 @@
+# Websockets
+
 The PowerMatcher is distributed in nature.
 
-Because of the distributed nature of the PowerMatcher the concept is extremely scalable. You can implement it on household level and have an auctioneer optimize your house. It can also be implemented by an energy collective or aggregator to optimize over a large system.
+Because of the distributed nature of the PowerMatcher the concept is extremely scalable. You can implement it on household level and have an auctioneer optimize your house. It can also be implemented by an energy collective or aggregator to optimize over a larger system: neighbourhood, country or even internationally.
 
 -----------------------------------------------------------
 
 # Technical Implementation
 
-[[Package:net.powermatcher.extensions.websockets|https://github.com/flexiblepower/powermatcher/tree/master/net.powermatcher.extensions/src/net/powermatcher/extensions/connectivity/websockets]]
-
-This package contains the main packages which enable the Powermatcher to communicate over websockets. Websockets is a flexible open communication mechanism which utilizes HTTP as a communication mechanism. The goal of this functionality to allow agents running in environments which are separated from the Auctioneer. This allows for a more scalable system (ie. more servers) or agents running in field stations or residential areas.
+The websockets package contains the main packages which enable the PowerMatcher to communicate over websockets. Websockets is a flexible open communication mechanism which utilizes HTTP as a communication mechanism. The goal of this functionality to allow agents running in environments which are separated from the Auctioneer. This allows for a more scalable system (ie. more servers) or agents running in field stations or residential areas.
 
 The following diagram provides a overview of a possible use case.
 
@@ -19,7 +19,9 @@ Remote communication is hidden for normal agents like a Concentrator, because th
 
 An AgentProxyEndpoint has to supply the desired matcherEndpointProxy as a configuration parameter. This value will be communicated to the websocket endpoint via a queryParameter. The websocket endpoint validates the existence of the MatcherEndpointProxy prior to accepting a connection.
 
-The websockets implementation is provided by Jetty, which contains an implementation conform the latest (final) websockets specfication. Jetty 9 is required for websockets and this poses an issue with the default Apache Felix Jetty which is version 8. Currently it's not possible to upgrade the Felix Jetty bundle, so Powermatcher Extensions ships with separate Jetty 9 bundles including required websocket bundles. The websockets.bndrun descriptor contains all required bundles to install and run.
+## Jetty
+
+The websockets implementation is provided by Jetty, which contains an implementation conform the latest (final) websockets specification. Jetty 9 is required for websockets and this poses an issue with the default Apache Felix Jetty which is version 8. Currently it's not possible to upgrade the Felix Jetty bundle, so PowerMatcher Extensions ships with separate Jetty 9 bundles including required websocket bundles. The websockets.bndrun descriptor contains all required bundles to install and run.
 This causes two Jetty servers to run within one OSGI runtime (Felix Jetty and standalone Jetty), the Felix Jetty for the Console has been moved to port 8181. The websocket communication will run over port 8080.
 
 **PowermatcherWebSocketServlet:**
@@ -48,9 +50,3 @@ Since the CusterId and MarketBasis are only known when the local MatcherEndpoint
 This packages contains helper classes to encode / decode the DTO objects to JSON. The Google GSON bundle is used as JSON implementation.
 
 --------------------------
-
-### [[Package: net.powermacther.api.connectivity|https://github.com/flexiblepower/powermatcher/tree/master/net.powermatcher.api/src/net/powermatcher/api/connectivity]]
-
-**AgentEndpointProxy:** Defines the interface and contains all basic methods needed to enable remote communication between an AgentEndpoint and a remote MatcherEndpoint through a MatcherEndpointProxy. The means of communication is up to the implementing class.
-
-**MatcherEndpointProxy:** Defines the interface and contains all basic methods needed to enable remote communication between a MatcherEndpointProxy and a remote AgentEndpoint through an AgentEndpointProxy. The means of communication is up to the implementing class.
