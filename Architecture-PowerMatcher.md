@@ -1,3 +1,5 @@
+# Architecture PowerMatcher
+
 In the [Introduction](Readme.md) we explained that the PowerMatcher creates a virtual market on which devices can place bids for consumption or production... Awesome! But how does this work?, well the underlying structure of The PowerMatcher is **Agent Technology**.
 
 -------------------------------
@@ -25,7 +27,7 @@ We distinguish at least 4 functional agents in a hierarchical structure:
 * Device Agent
 * Objective Agent
 
-![Example of a PowerMatcher cluster](powermatcher.png)
+![Example of a PowerMatcher cluster](http://flexiblepower.github.io/images/site/powermatcher.png)
 
 ## The Device Agent
 
@@ -56,6 +58,3 @@ Lastly, the concentrator can be used to manipulate the children agents that are 
 ## The Objective Agent
 
 The objective agent gives a cluster its purpose. The objective agent **interfaces to the business logic** behind the specific application.  When the objective agent is absent, the goal of the cluster is to balance itself, i.e., it strives for an equal supply and demand within the cluster itself. Depending on the specific application, the goal of the cluster might be different. If the cluster has to operate as a virtual power plant, for example, it needs to follow a certain externally provided setpoint schedule. Such an externally imposed objective can be realized by implementing an objective agent. Other couplings could be with the energy trading market, external optimization algorithms etc.
-
------------------------------------------------
-Continue reading how agents were implemented architecturally [[PowerMatcher Core| https://github.com/flexiblepower/powermatcher/wiki/Powermatcher-core]]

@@ -1,3 +1,5 @@
+# The PowerMatcher Core
+ 
 In the previous section [Architecture](Architecture-PowerMatcher) you've learned about our different Agents. This chapter delves deeper in how the Agents were implemented technically.
 
 ### Package: [net.powermatcher.core](https://github.com/flexiblepower/powermatcher/tree/master/net.powermatcher.core)

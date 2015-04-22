@@ -1,3 +1,5 @@
+# Device Agent Bids
+
 Earlier we described the Device Agent as follows:
 
 The device agent is connected to both the PowerMatcher and to the physical smart device. The device agent sends bids and receives prices from the PowerMatcher, by acting on the market it also influences the market. The device agent sends new setpoints (based on market prices) to the device and receives information on its current state (that can result in new bids). See Figure 1 for an overview:
@@ -16,7 +18,7 @@ The business logic receives flexibility information from the smart Device and tr
 
 Due to changed state of the sytem: the inner temperature is too high; the device Agent is willing to pay more. When determining the desired Bid it can also take into account user preferences; for instance "I never want the Freezer to get above >10 degrees Celcius"
 
-Vice versa the Device Agent receives prices from the market. See [[Equilibrium Price|Equilibrium]] for more information on how this price balances the market. For now understand that the price results in a new setpoint.
+Vice versa the Device Agent receives prices from the market. See [Equilibrium Price](Equilibrium.md) for more information on how this price balances the market. For now understand that the price results in a new setpoint.
 
 **Important to understand** is that the Device Agent does **NOT overwrite the embedded control system** of the device itself. We surely are not trying to destroy device! The embedded control systems knows best what the safety limits are of the device...smart devices will have an API that lets you externally set some setpoints. With the Freezer this could be to set the desired inner temperature and possibly the ramp speed.
 
@@ -40,13 +42,10 @@ Bids that represent generation of energy, demand ‘negative power’ and are th
 
 **Figure 3: Consumption and Production Bids**
 
-Please read [[Data Objects| https://github.com/flexiblepower/powermatcher/wiki/API-DataObjects]] section to understand how Bids and Prices are defined technically.
+Please read [Data Objects](DataObjects.md) section to understand how Bids and Prices are defined technically.
 
 # Technical Implementation
 
-For a detailed explanation and walkthrough on the technical implementation of a Device Agent the reader is referred to th tutorial section:
-[[Creation of a Device Agent|CreationOfDeviceAgent]]
+For a detailed explanation and walkthrough on the technical implementation of a Device Agent the reader is referred to the tutorial section:
+[Creation of a Device Agent](CreationOfDeviceAgent.md)
 
--------------------------
-
-Now that you know about the origin of Bids, learn how they are aggregated in [[Aggregation|Aggregation]]
