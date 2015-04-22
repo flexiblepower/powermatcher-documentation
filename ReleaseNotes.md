@@ -1,6 +1,6 @@
 # Release Notes
 
-Version 2.0 by FAN is a complete new PowerMatcher implementation (not based on earlier releases). 
+Version 2.0 by [FlexiblePower Alliance Network (FAN)](http://flexiblepower.github.io/get-involved/about/) is a complete new PowerMatcher implementation (not based on earlier releases). 
 
 Version 2.0 contains the following features:
 

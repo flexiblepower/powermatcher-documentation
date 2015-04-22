@@ -1,9 +1,6 @@
 #Summary
 
 * [Release Notes](ReleaseNotes.md)
-* [Branching](Branching.md)
-* [Continuous Integration](ContinuousIntegration.md)
-* [Coding Conventions](CodingConventions.md)
 * [Architecture PowerMatcher](Architecture-PowerMatcher.md)
     * [PowerMatcher Core](PowerMatcher-Core.md)
          * [Device Agent Bids](Bids.md)
@@ -39,3 +36,6 @@
     * [Using the Visualizer](Visualizer.md)
 * [PM Security Guidelines](PowerMatcher-Security-Guidelines.md)
 * [How to contribute to PM community](Contributing.md)
+	* [Branching](Branching.md)
+	* [Coding Conventions](CodingConventions.md)
+	* [Continuous Integration](ContinuousIntegration.md)
