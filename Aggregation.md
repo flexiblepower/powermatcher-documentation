@@ -28,7 +28,7 @@ After aggregation of all child agent bid curves a new aggregated bid curve is co
 
 # Technical Implementation
 
-At some point in time, due to a new event or scheduling(see [Events & Scheduling](Events & Scheduling), an Agent is activated to aggregate it's latest Bids in the Bidcache. This `bidCache.aggregate()` is activated in the [BaseMatcherEndpoint](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/BaseMatcherEndpoint.java).
+At some point in time, due to a new event or scheduling (see [Events & Scheduling](Events-&-Scheduling), an Agent is activated to aggregate it's latest Bids in the Bidcache. This `bidCache.aggregate()` is activated in the [BaseMatcherEndpoint](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/BaseMatcherEndpoint.java).
 
 ```
    private final Runnable bidUpdateCommand = new Runnable() {
@@ -38,6 +38,7 @@ At some point in time, due to a new event or scheduling(see [Events & Scheduling
                 if (isInitialized()) {
                     performUpdate(bidCache.aggregate());
 ```
-Bids are stored in a [Bidcache](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/BidCache.java), an object that lives aside every Concentrator or Auctioneer. The BidCache keeps track of all Bids that are currently known to the Agent.
+
+Bids are stored in a [Bidcache](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/bidcache/BidCache.java), an object that lives aside every Concentrator or Auctioneer. The BidCache keeps track of all Bids that are currently known to the Agent.
 
 For more detailed information on aggregation please continue reading in the [Javadoc]().
