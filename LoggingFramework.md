@@ -1,4 +1,4 @@
-# Overview
+# Logging Framework
 
 This section explains the logging of `Events`. The slf4j logging is not handled here.
 

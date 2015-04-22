@@ -16,13 +16,13 @@ Create a concentrator with `Freezer`.
 
 ## Creating a new CSV Logger
 
-We will create a CSVLogger that will log all Events in the cluster. The file will be placed in `C:/powermatcher/logs` and the filename will be `EventList_log_*today*.csv`
+We will create a CSVLogger that will log all Bid Events in the cluster. The file will be placed in `C:/powermatcher/logs` and the filename will be `event_log_*today*.csv`
 
 Click on the + button at the end of the `CSVLogger config` line to create a new `CSVLogger` and add the following values.
 
-![CSV_create]()
+![CSV_create](configuration-csvlogger.png)
 
-When you click on save, This AgentObserver will be attached to concentrator. 
+When you click on save, This AgentObserver will be attached to the Concentrator. 
 
 The eclipse console will contain the following output:
 

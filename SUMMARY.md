@@ -19,7 +19,7 @@
     * [Lifecycle](Lifecycle.md)
     * [Context](FlexiblePowerContext.md)
 * [PowerMatcher Monitoring](PowerMatcher-Monitoring.md)
-    * [PowerMatcher Logging](PMLogging.md)
+    * [Logging Framework](LoggingFramework.md)
     * [CSVLogger](CSVLogger.md)
     * [Implementing KLE Stack](KLEStack.md)  
 * [Remote Communication](RemoteCommunication.md)

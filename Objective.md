@@ -10,7 +10,7 @@ This is just one example for using the Objective Agent.
 
 # The Objective Agent 
 
-![](objective_agent.png)
+![]()
 
 **Figure 1 - Objective agent**
 
