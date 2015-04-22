@@ -1,6 +1,6 @@
 # The Equilibrium Price
 
-Make sure you have read the [Aggregation](Aggregation) section before you continue. 
+Make sure you have read the [Aggregation](Aggregation.md) section before you continue. 
 
 Assume that we now have a very small cluster with only two Device Agents: the Freezer and the Battery, and the Auctioneer. See Figure 1:
 
@@ -27,9 +27,9 @@ Figure 3 shows this in a visual representation of an Aggregated Bid that consist
 
 **Figure 3: Determining the Equilibrium price!**
 
-The point where the aggregated bid passes through the X-axes/Price-axes: this is the internal price where the system is in balance. This is a method of the [Auctioneer](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/auctioneer/Auctioneer.java#L211) 
+The point where the aggregated bid passes through the X-axes/Price-axes: this is the internal price where the system is in balance. This is a method of the [Auctioneer](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/auctioneer/Auctioneer.java). 
 
-After determining the Equilibrium price it is [communicated down the PowerMatcher to each individual device](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/auctioneer/Auctioneer.java#L198). Each device will start consuming or producing energy as ‘promised’ by its Bid. See Figure 4:
+After determining the Equilibrium price it is communicated down the PowerMatcher to each individual device. Each device will start consuming or producing energy as ‘promised’ by its Bid. See Figure 4:
 
 ![NewSetPoint](NewSetPoint.png)
 
@@ -50,3 +50,4 @@ The Auctioneer's main function `performUpdate()` is activated and calls `calcula
 
 ```
 
+For more detailed information on determining the equilibrium price please continue reading in the [Javadoc]().
