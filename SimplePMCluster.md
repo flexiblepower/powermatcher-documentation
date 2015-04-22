@@ -31,7 +31,7 @@ In this example, we will be using the `Auctioneer`, `Concentrator`, `PVPanel` an
 
 ## Configuring PowerMatcher
 
-In the menu, select OSGi -> configuration to open the configuration manager. Here, we will create an `Auctioneer`, a `Concentrator` and a `PVPanel` instance. The SessionManager will link them all together for us. This is explained in the [Sessions](Session) section.
+In the menu, select OSGi -> configuration to open the configuration manager. Here, we will create an `Auctioneer`, a `Concentrator` and a `PVPanel` instance. The SessionManager will link them all together for us. This is explained in the [Sessions](Session.md) section.
 
 ![Felix configuration manager](felix_config_mgr.png)
 

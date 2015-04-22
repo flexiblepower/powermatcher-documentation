@@ -1,13 +1,13 @@
-##Overview
+# Using the Visualizer
 
-In the [Simple PM Cluster](../SimplePMCluster) section, we created a cluster using the Felix Configuration Admin. There was hardly any visual feedback, apart from the eclipse console output that told us the Agents were activated and that sessions had started. 
+In the [Simple PM Cluster](SimplePMCluster.md) section, we created a cluster using the Felix Configuration Admin. There was hardly any visual feedback, apart from the eclipse console output that told us the Agents were activated and that sessions had started. 
 The Visualizer is a graphical shell on top of the Configuration Admin, with the addition of session visualization. You can use the visualizer and the Configuration Admin at the same time. Agents added in the Configuration Admin will be shown in the visualizer after a page refresh and visa versa. 
 
 On this page, we will start up the visualizer, create the same cluster we created as last time and then add a new Agent Type to the menu and cluster.
 
 ## Using the visualizer
 
-For this tutorial, we won't use the `examples.bndrun`. The powermatcher repository has an `net.powermatcher.visualisation` bundle, open the `visualisation.bndrun` file. Click on `Run OSGi` to fire up the Apache Felix service. Now go to [http://localhost:8080/system/console/configMgr](http://localhost:8080/system/console/configMgr) 
+For this tutorial, we won't use the `examples.bndrun`. The PowerMatcher repository has an `net.PowerMatcher.visualisation` bundle, open the `visualisation.bndrun` file. Click on `Run OSGi` to fire up the Apache Felix service. Now go to [http://localhost:8080/system/console/configMgr](http://localhost:8080/system/console/configMgr) 
 
 ### Starting up
 
@@ -15,7 +15,7 @@ Click on the + button at the end of the `Visualisation plug-in config` line to c
 
 ![visualisation_config.png](visualisation_config.png)
 
-The Visualizer is now running. In the Felix menu, go to Main -> Powermatcher cluster visualizer. 
+The Visualizer is now running. In the Felix menu, go to Main -> PowerMatcher cluster visualizer. 
 
 ![visualisation_felix_menu.png](visualisation_felix_menu.png)
 
@@ -80,7 +80,7 @@ menu-title::fpid-of-agent
 In the [Creating a Device Agent](../CreationOfDeviceAgent) section, we added a wind turbine, let's add it to this menu and put one in the cluster. So add the line
 
 ```
-DeviceAgent::net.powermatcher.examples.WindTurbine
+DeviceAgent::net.PowerMatcher.examples.WindTurbine
 ```
 ![visualisation_add_windTurbine.png](visualisation_add_windTurbine.png)
 

@@ -1,8 +1,6 @@
 # Creating a Device Agent
 
-##Overview
-
-In this part of the tutorial, you will learn how to create your own device agent. The device we will be creating is a wind turbine.
+In this part of the tutorial, you will learn how to create your own Device Agent. The device we will be creating is a wind turbine.
 
 # Creating the basic class
 
@@ -68,10 +66,10 @@ Now we get to the actual functionality of our `WindTurbine`: sending `Bids`and r
 
 ### Sending bids
 
-To send Bids, we will implements `doBidUpdate()`. The basic functionality of this method is to create a `Bid` and send that bid to a `MatcherEndpoint` through the `Session`. For the purposes of this demo, we will be sending randomly generated bids. But in a real Device Agent; new Bids will often be the result due a change in the state of the Device...so if the Wind will start blowing harder it will want to offer more Power to the market: hence the maximumDemand will probably coupled to the Power Output of the Windmill in some way.....see [[Device Agent Bids|Bids]].  
+To send Bids, we will implements `doBidUpdate()`. The basic functionality of this method is to create a `Bid` and send that bid to a `MatcherEndpoint` through the `Session`. For the purposes of this demo, we will be sending randomly generated bids. But in a real Device Agent; new Bids will often be the result due a change in the state of the Device...so if the Wind will start blowing harder it will want to offer more Power to the market: hence the maximumDemand will probably coupled to the Power Output of the Windmill in some way.....see [Device Agent Bids](Bids.md).  
 
 1. Use the generator to create a random demand, based on the `minimumDemand` and the  `maximumDemand`
-2. Create a PointBid using the `Builder` pattern to construct the `Bid` out of two `PricePoints` (Price, Demand) (see [[Data Objects|DataObjects]]
+2. Create a PointBid using the `Builder` pattern to construct the `Bid` out of two `PricePoints` (Price, Demand) (see [Data Objects](DataObjects)
 3. Publish the Bid. `publishBid()` is defined in BaseAgentEndpoint and makes sure that the Bid gets a unique bidNumber, it sends an `OutgoingBidUpdateEvent` to all `Observers` of this `WindTurbine` instance, and send the Bid to its `MatcherEndpoint` through the `Session`. 
 
 ```
@@ -200,7 +198,7 @@ Similar to the `activate` method, this method will be annotated with `@Deactivat
 
 #Final class
 
-That's it! You just created a simple Device Agent. You can now fire up OSGI like we did in the [SimplePMCluster](Simple PM cluster) section and add a `WindTurbine` to the mix. 
+That's it! You just created a simple Device Agent. You can now fire up OSGI like we did in the [SimplePMCluster](SimplePMCluster.md) section and add a `WindTurbine` to the mix. 
 
 If the `WindTurbine `does not show up in your config admin, you will probably have to rebuild the project with the bundle file of the net.powermatcher.examples project.
 

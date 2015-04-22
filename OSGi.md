@@ -11,7 +11,7 @@ This section briefly describes all the necessary concepts which are required to 
 PowerMatcher runs on top of the Apache Felix OSGi framework. For developing we recommend using the Apache Felix Web Console. For development we use Eclipse in combination with Bndtools.
 
 ## Your workspace
-If you followed the steps in [Setting up your IDE](SettingUpYourIDE.md), you should now have Eclipse with the Bndtools perspective.
+If you followed the steps in [Setting up your IDE](SettingUpTheIDE.md), you should now have Eclipse with the Bndtools perspective.
 
 ![The Eclipse workspace](workspace.png)
 
@@ -49,7 +49,7 @@ Services are provided using the Services Registry, the API for managing services
 OSGi already has a lot of built in services, which are included in the runtime, for instance Configuration Admin, Logging, and User Admin.
 
 ## Bndtools
-In the [Previous Chapter](SettingUpYourIDE.md) you have installed Bndtools. Bndtools has no other requirements than Eclipse itself. It offers you an easy, powerful and productive way to develop with OSGi. Bndtools uses bytecode analysis to accurately calculate the dependencies of your OSGi bundles. In the tutorial we will further explain how to use Bndtools.
+In the [Setting Up The IDE](SettingUpTheIDE.md) you have installed Bndtools. Bndtools has no other requirements than Eclipse itself. It offers you an easy, powerful and productive way to develop with OSGi. Bndtools uses bytecode analysis to accurately calculate the dependencies of your OSGi bundles. In the tutorial we will further explain how to use Bndtools.
 
 ## Component model
 

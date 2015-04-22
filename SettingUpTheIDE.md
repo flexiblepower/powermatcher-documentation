@@ -68,7 +68,7 @@ For more information see [http://bndtools.org](http://bndtools.org). There is al
 
 ### Importing the formatting xml file
 
-As mentioned in the [Coding Conventions](../CodingConventions) section, PowerMatcher has coding conventions. Since we are using the eclipse IDE, we will use the eclipse formatter. 
+As mentioned in the [Coding Conventions](CodingConventions.md) section, PowerMatcher has coding conventions. Since we are using the eclipse IDE, we will use the eclipse formatter. 
 
 Go to `Window` -> `Preferences`. Then, on the left, open `Java` -> `Code Style` -> `Formatter`. Click on `import` and browse to the location of your PowerMatcher repostitory, which is C:/Code/PowerMatcher in this tutorial. Finally, click `apply`.
 
