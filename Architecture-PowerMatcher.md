@@ -39,7 +39,7 @@ On one side the device agent is connected to the the PowerMatcher market, on the
 
 To steer and read out the machine, a “physical” connection has to be made with the device. This could be done by mapping the agent directly to the IO or the device API. 
 
-Alternatively PowerMatcher can also be run on the [FPAI technology](http://fpai-ci.sensorlab.tno.nl/builds/fpai-documentation/v14.10/html/) as an intermediate layer; this only requires a mapping of the device agent to the abstraction layer of FPAI. FPAI takes care of the actual physical connection with the device (see FPAI section). As a result the PowerMatcher device agent does not have to think about the type of machine, brand, or model number. The reader is referred to the FPAI section for a more detailed explanation of FPAI technology.
+Alternatively PowerMatcher can also be run on the [EF-Pi technology](http://fpai-ci.sensorlab.tno.nl/builds/fpai-documentation/v14.10/html/) as an intermediate layer; this only requires a mapping of the device agent to the abstraction layer of EF-Pi. EF-Pi takes care of the actual physical connection with the device (see EF-Pi section). As a result the PowerMatcher device agent does not have to think about the type of machine, brand, or model number. The reader is referred to the EF-Pi section for a more detailed explanation of EF-Pi technology.
 
 ## The Auctioneer Agent
 

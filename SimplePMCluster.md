@@ -1,12 +1,10 @@
 # Creating a simple PM cluster
 
-## Overview
-
 In this part of the tutorial, we will be creating two simple PM clusters. Our first cluster will have an `Auctioneer`, a `Concentrator` and a `PVPanel` (photovoltaic panel). Once that cluster is up and running, we will add a Freezer to this cluster.
 
 ![Simple Clusters](simple_clusters.png)
 
-This session uses the configuration admin provided by the Felix web console. In the [Visualizer](../Visualizer) section, we will use the powermatcher visualizer.
+This session uses the configuration admin provided by the Felix web console. In the [Visualizer](Visualizer.md) section, we will use the PowerMatcher visualizer.
 
 We will do this by following the following steps:
 
@@ -15,11 +13,11 @@ We will do this by following the following steps:
   3. Configure Concentrator
   4. Configure PVAgent
 
-## Starting up Powermatcher in OSGI
+## Starting up PowerMatcher in OSGI
 
-The powermatcher repository has an `examples` bundle, containing example implementations of the core and API classes and interfaces. In this example, our device agents will be the `PVPanel` and the `Freezer` classes. More information on how to build your own device agent can be found in the [Creation of a device agent](CreationOfDeviceAgent) section.
+The PowerMatcher repository has an `examples` bundle, containing example implementations of the core and API classes and interfaces. In this example, our device agents will be the `PVPanel` and the `Freezer` classes. More information on how to build your own device agent can be found in the [Creation of a device agent](CreationOfDeviceAgent.md) section.
 
-In eclipse, open `examples.bndrun` of the `net.powermatcher.examples` project. Click on `Run OSGi` to fire up the Apache Felix service.
+In eclipse, open `examples.bndrun` of the `net.PowerMatcher.examples` project. Click on `Run OSGi` to fire up the Apache Felix service.
 
 ![eclipse example.bndrun](eclipse_example_bndrun.png)
 
@@ -27,11 +25,11 @@ Felix will start logging to the eclipse console. When `[INFO] Started Jetty ... 
 
 The default username and password are both: 'admin'
 
-![OSGi components](felix_components.png)
+![OSGi components](felix_bundles.png)
 
 In this example, we will be using the `Auctioneer`, `Concentrator`, `PVPanel` and `Freezer` bundles. As you can see, they are all either `registered `or `unsatified`. After the configuration, they all have an `active` status.
 
-## Configuring powermatcher
+## Configuring PowerMatcher
 
 In the menu, select OSGi -> configuration to open the configuration manager. Here, we will create an `Auctioneer`, a `Concentrator` and a `PVPanel` instance. The SessionManager will link them all together for us. This is explained in the [Sessions](Session) section.
 
@@ -57,12 +55,12 @@ A `PVPanel` instance are created in the same way as the `Concentrator` and the `
 
 ## Interpreting the PowerMatcher log
 
-In console view in eclipse, powermatcher and felix will log transactions.
+In console view in eclipse, PowerMatcher and felix will log transactions.
 
-The first output by Powermatcher will be to log the activation of the instances and then the creation of the 2 sessions.
+The first output by PowerMatcher will be to log the activation of the instances and then the creation of the 2 sessions.
 
 ```
-INFO  n.powermatcher.examples.PVPanelAgent - Agent [pvpanel], activated
+INFO  n.PowerMatcher.examples.PVPanelAgent - Agent [pvpanel], activated
 INFO  n.p.core.concentrator.Concentrator - Agent [concentrator], activated
 INFO  n.p.core.auctioneer.Auctioneer - Agent [auctioneer], activated
 ...
@@ -72,10 +70,10 @@ INFO  n.p.core.auctioneer.Auctioneer - Agent connected with session [concentrato
 INFO  n.p.core.concentrator.Concentrator - Agent connected with session [pvpanel:concentrator]
 ```
 
-Every 10 seconds, powermatcher will log transactions. We will go over them, line by line:
+Every 10 seconds, PowerMatcher will log transactions. We will go over them, line by line:
 
 ```
-DEBUG n.powermatcher.examples.PVPanelAgent - updateBid(PointBid{bidNumber=1, PricePoint[]{PricePoint{Price{priceValue=0}, demand = -628.4498098610256),PricePoint{Price{priceValue=1}, demand = -700.0)}, MarketBasis{commodity=electricity, currency=EUR, minimumPrice=0, maximumPrice=1, priceSteps=100}})
+DEBUG n.PowerMatcher.examples.PVPanelAgent - updateBid(PointBid{bidNumber=1, PricePoint[]{PricePoint{Price{priceValue=0}, demand = -628.4498098610256),PricePoint{Price{priceValue=1}, demand = -700.0)}, MarketBasis{commodity=electricity, currency=EUR, minimumPrice=0, maximumPrice=1, priceSteps=100}})
 ```
 The `pvpanel` sends a PointBid to the `concentrator`. The bid contains the bidnumber, pricePointArray and the Marketbasis.
 ```
@@ -99,7 +97,7 @@ DEBUG n.p.core.concentrator.Concentrator - Received price update [PriceUpdate [P
 ```
 The `concentrator` receives the PriceUpdate and sends it to the `pvpanel`.
 ```
-DEBUG n.powermatcher.examples.PVPanelAgent - Received price update [PriceUpdate [Price{priceValue=0}, bidNr=6]], current bidNr = 7
+DEBUG n.PowerMatcher.examples.PVPanelAgent - Received price update [PriceUpdate [Price{priceValue=0}, bidNr=6]], current bidNr = 7
 ```
 The `pvpanel` recieves an updated price from the `concentrator` and notifies all of its observers
 

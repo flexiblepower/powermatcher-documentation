@@ -28,7 +28,7 @@
 * [Tests PowerMatcher](Tests.md)
 * [EF-Pi & PM integration](EFPi_PM.md)
 * [Working with OSGI](OSGi.md)
-* [PM tutorial](PMTutorial.md)
+* [Tutorials](Tutorials.md)
     * [Setting up the IDE](SettingUpTheIDE.md)
     * [Simple PM cluster](SimplePMCluster.md)
     * [Advanced PM cluster](AdvancedPMCluster.md)
