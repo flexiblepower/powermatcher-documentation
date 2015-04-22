@@ -1,7 +1,7 @@
 #Summary
 
 * [Release Notes](ReleaseNotes.md)
-* [Architecture ](Architecture-PowerMatcher.md)
+* [Architecture](Architecture-PowerMatcher.md)
     * [Core](PowerMatcher-Core.md)
          * [Device Agent Bids](Bids.md)
          * [Aggregation](Aggregation.md)
@@ -35,7 +35,6 @@
     * [Advanced PM cluster](AdvancedPMCluster.md)
     * [Creation of a Device Agent](CreationOfDeviceAgent.md)
     * [Using the Visualizer](Visualizer.md)
-
 * [Contributing to the community](Contributing.md)
 	* [Branching](Branching.md)
 	* [Coding Conventions](CodingConventions.md)
