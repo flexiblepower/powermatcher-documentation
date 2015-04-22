@@ -10,7 +10,7 @@ The PowerMatcher protocol consists of few different Data Objects passed from one
 
 # Bid   
 
-Bid is an abstract class that defines the basic functions we want to perform on a Bid such a calculateIntersection(), getMaximumDemand(), etc.
+Bid is an abstract class that defines the basic functions we want to perform on a Bid such a `calculateIntersection()`, `getMaximumDemand()`, etc.
 
 It does not yet define the coordinates of the bid curve! For this the abstract class can be implemented in two different ways: the ArrayBid and the PointBid.
 

@@ -11,7 +11,7 @@ Prices and Bids are clean Objects; however when they are sent to another Agent t
     private final int bidNumber;
 ```
 
-PriceUpdates are the messages sent between Agents and make sure a Price stays linked with a bidNumber. A Price and bidNumber are coupled to solve oscillation behaviour of a cluster, read more in [Oscillation](Oscillation) to uderstand the workings.
+PriceUpdates are the messages sent between Agents and make sure a Price stays linked with a bidNumber. A Price and bidNumber are coupled to solve oscillation behaviour of a cluster, read more in [BidNumbers](BidNumbers.md) to understand the workings.
 
 ##BidUpdate
 [BidUpdate](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.api/src/net/powermatcher/api/messages/BidUpdate.java) is an immutable data object that stores a Bid and its bidNumber.
