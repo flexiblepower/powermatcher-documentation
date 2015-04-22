@@ -1,6 +1,6 @@
 # Coding Conventions
 
-The coding conventions for the Powermatcher project are defined in an xml format file. More on importing this xml file in the [Setting Up The IDE](../SettingUpTheIDE#importing-the-formatting-xml-file) section.
+The coding conventions for the Powermatcher project are defined in an XML format file. More on importing this XML file in the [Setting Up The IDE](SettingUpTheIDE.md) section.
 
 ### Conventions
 

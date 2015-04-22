@@ -1,0 +1,156 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files (x86)\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gitbook-cli',
+1 verbose cli   '-g' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink C:\Program Files (x86)\nodejs\\node.exe
+5 silly cache add args [ 'gitbook-cli', null ]
+6 verbose cache add spec gitbook-cli
+7 silly cache add parsed spec { raw: 'gitbook-cli',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'gitbook-cli',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed gitbook-cli@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'gitbook-cli', range: '*', hasData: false }
+12 silly mapToRegistry name gitbook-cli
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/gitbook-cli
+16 verbose addNameRange registry:https://registry.npmjs.org/gitbook-cli not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/gitbook-cli
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 16:20:12
+20 verbose request id 3f4e0d663c554283
+21 verbose etag "4915WKY19OKIJF4JH4H16CO3U"
+22 http request GET https://registry.npmjs.org/gitbook-cli
+23 http 304 https://registry.npmjs.org/gitbook-cli
+24 silly get cb [ 304,
+24 silly get   { date: 'Tue, 21 Apr 2015 14:20:28 GMT',
+24 silly get     server: 'Apache',
+24 silly get     via: '1.1 varnish',
+24 silly get     'last-modified': 'Tue, 21 Apr 2015 14:20:28 GMT',
+24 silly get     'cache-control': 'max-age=60',
+24 silly get     etag: '"4915WKY19OKIJF4JH4H16CO3U"',
+24 silly get     age: '0',
+24 silly get     'x-served-by': 'cache-ams4140-AMS',
+24 silly get     'x-cache': 'MISS',
+24 silly get     'x-cache-hits': '0',
+24 silly get     'x-timer': 'S1429626028.490580,VS0,VE386',
+24 silly get     vary: 'Accept',
+24 silly get     'content-length': '0',
+24 silly get     'keep-alive': 'timeout=10, max=50',
+24 silly get     connection: 'Keep-Alive' } ]
+25 verbose etag https://registry.npmjs.org/gitbook-cli from cache
+26 verbose get saving gitbook-cli to \\fspaka02\userdata5b$\AL9075\AppData\npm-cache\registry.npmjs.org\gitbook-cli\.cache.json
+27 silly addNameRange number 2 { name: 'gitbook-cli', range: '*', hasData: true }
+28 silly addNameRange versions [ 'gitbook-cli',
+28 silly addNameRange   [ '0.1.0', '0.2.0', '0.3.0', '0.3.1', '0.3.2', '0.3.3' ] ]
+29 verbose addNamed gitbook-cli@0.3.3
+30 silly addNamed semver.valid 0.3.3
+31 silly addNamed semver.validRange 0.3.3
+32 silly cache afterAdd gitbook-cli@0.3.3
+33 verbose afterAdd \\fspaka02\userdata5b$\AL9075\AppData\npm-cache\gitbook-cli\0.3.3\package\package.json not in flight; writing
+34 verbose afterAdd \\fspaka02\userdata5b$\AL9075\AppData\npm-cache\gitbook-cli\0.3.3\package\package.json written
+35 silly install resolved [ { name: 'gitbook-cli',
+35 silly install resolved     version: '0.3.3',
+35 silly install resolved     homepage: 'https://www.gitbook.com',
+35 silly install resolved     description: 'CLI to generate books using gitbook',
+35 silly install resolved     main: 'lib/index.js',
+35 silly install resolved     dependencies:
+35 silly install resolved      { q: '1.0.1',
+35 silly install resolved        lodash: '2.4.1',
+35 silly install resolved        semver: '2.2.1',
+35 silly install resolved        npmi: '0.1.1',
+35 silly install resolved        tmp: '0.0.23',
+35 silly install resolved        commander: '2.6.0',
+35 silly install resolved        optimist: '0.6.1',
+35 silly install resolved        'fs-extra': '0.15.0',
+35 silly install resolved        'bash-color': '0.0.3',
+35 silly install resolved        npm: '2.4.1' },
+35 silly install resolved     repository:
+35 silly install resolved      { type: 'git',
+35 silly install resolved        url: 'https://github.com/GitbookIO/gitbook-cli.git' },
+35 silly install resolved     author: { name: 'FriendCode Inc.', email: 'contact@gitbook.com' },
+35 silly install resolved     license: 'Apache 2',
+35 silly install resolved     bugs: { url: 'https://github.com/GitbookIO/gitbook-cli/issues' },
+35 silly install resolved     bin: { gitbook: './bin/gitbook.js' },
+35 silly install resolved     contributors: [ [Object], [Object] ],
+35 silly install resolved     gitHead: '7d203a01a1332922cf0e7d7e7d1d379f00697d62',
+35 silly install resolved     _id: 'gitbook-cli@0.3.3',
+35 silly install resolved     scripts: {},
+35 silly install resolved     _shasum: '847c8122db25c30bd28733370533874ebf7e3306',
+35 silly install resolved     _from: 'gitbook-cli@*',
+35 silly install resolved     _npmVersion: '2.7.0',
+35 silly install resolved     _nodeVersion: '0.10.33',
+35 silly install resolved     _npmUser: { name: 'samypesse', email: 'samypesse@gmail.com' },
+35 silly install resolved     maintainers: [ [Object] ],
+35 silly install resolved     dist:
+35 silly install resolved      { shasum: '847c8122db25c30bd28733370533874ebf7e3306',
+35 silly install resolved        tarball: 'http://registry.npmjs.org/gitbook-cli/-/gitbook-cli-0.3.3.tgz' },
+35 silly install resolved     directories: {},
+35 silly install resolved     _resolved: 'https://registry.npmjs.org/gitbook-cli/-/gitbook-cli-0.3.3.tgz',
+35 silly install resolved     readme: 'ERROR: No README data found!' } ]
+36 info install gitbook-cli@0.3.3 into \\fspaka02\userdata5b$\AL9075\AppData\npm
+37 info installOne gitbook-cli@0.3.3
+38 verbose installOne of gitbook-cli to \\fspaka02\userdata5b$\AL9075\AppData\npm not in flight; installing
+39 verbose lock using \\fspaka02\userdata5b$\AL9075\AppData\npm-cache\_locks\gitbook-cli-19544cf2419b4f87.lock for \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+40 silly install write writing gitbook-cli 0.3.3 to \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+41 silly cache addNamed cb gitbook-cli@0.3.3
+42 verbose unbuild node_modules\gitbook-cli
+43 info preuninstall gitbook-cli@0.3.3
+44 info uninstall gitbook-cli@0.3.3
+45 verbose unbuild rmStuff gitbook-cli@0.3.3 from \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules
+46 silly gentlyRm \\fspaka02\userdata5b$\AL9075\AppData\npm\gitbook.cmd is being gently removed
+47 silly gentlyRm verifying \\fspaka02\userdata5b$\AL9075\AppData\npm is an npm working directory
+48 silly gentlyRm containing path \\fspaka02\userdata5b$\AL9075\AppData\npm is under npm's control, in \\fspaka02\userdata5b$\AL9075\AppData\npm
+49 silly gentlyRm deletion target \\fspaka02\userdata5b$\AL9075\AppData\npm\gitbook.cmd is under \\fspaka02\userdata5b$\AL9075\AppData\npm
+50 verbose gentlyRm vacuuming from \\fspaka02\userdata5b$\AL9075\AppData\npm\gitbook.cmd up to \\fspaka02\userdata5b$\AL9075\AppData\npm
+51 silly gentlyRm \\fspaka02\userdata5b$\AL9075\AppData\npm\gitbook is being gently removed
+52 silly gentlyRm verifying \\fspaka02\userdata5b$\AL9075\AppData\npm is an npm working directory
+53 silly gentlyRm containing path \\fspaka02\userdata5b$\AL9075\AppData\npm is under npm's control, in \\fspaka02\userdata5b$\AL9075\AppData\npm
+54 silly gentlyRm deletion target \\fspaka02\userdata5b$\AL9075\AppData\npm\gitbook is under \\fspaka02\userdata5b$\AL9075\AppData\npm
+55 verbose gentlyRm vacuuming from \\fspaka02\userdata5b$\AL9075\AppData\npm\gitbook up to \\fspaka02\userdata5b$\AL9075\AppData\npm
+56 info postuninstall gitbook-cli@0.3.3
+57 silly gentlyRm \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli is being purged from base \\fspaka02\userdata5b$\AL9075\AppData\npm
+58 verbose gentlyRm don't care about contents; nuking \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+59 silly vacuum-fs purging \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+60 silly vacuum-fs quitting because other entries in \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules
+61 verbose tar unpack \\fspaka02\userdata5b$\AL9075\AppData\npm-cache\gitbook-cli\0.3.3\package.tgz
+62 verbose tar unpacking to \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+63 silly gentlyRm \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli is being purged
+64 verbose gentlyRm don't care about contents; nuking \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+65 silly vacuum-fs Error: UNKNOWN, lstat '\\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli'
+65 silly vacuum-fs     at Error (native)
+66 verbose unlock done using \\fspaka02\userdata5b$\AL9075\AppData\npm-cache\_locks\gitbook-cli-19544cf2419b4f87.lock for \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+67 verbose stack Error: UNKNOWN, lstat '\\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli'
+67 verbose stack     at Error (native)
+68 verbose cwd c:\Github_Workspace\powermatcher-documentation
+69 error Windows_NT 6.1.7601
+70 error argv "C:\\Program Files (x86)\\nodejs\\\\node.exe" "C:\\Program Files (x86)\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gitbook-cli" "-g"
+71 error node v0.12.2
+72 error npm  v2.7.4
+73 error path \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+74 error code UNKNOWN
+75 error errno -4094
+76 error UNKNOWN, lstat '\\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli'
+77 error If you need help, you may report this error at:
+77 error     <https://github.com/npm/npm/issues>
+78 verbose exit [ -4094, true ]
+79 verbose unbuild node_modules\gitbook-cli
+80 silly gentlyRm \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli is being purged from base \\fspaka02\userdata5b$\AL9075\AppData\npm
+81 verbose gentlyRm don't care about contents; nuking \\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli
+82 silly vacuum-fs Error: UNKNOWN, lstat '\\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli'
+82 silly vacuum-fs     at Error (native)
+83 error error rolling back Error: UNKNOWN, lstat '\\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli'
+83 error error rolling back     at Error (native)
+83 error error rolling back  { [Error: UNKNOWN, lstat '\\fspaka02\userdata5b$\AL9075\AppData\npm\node_modules\gitbook-cli']
+83 error error rolling back   errno: -4094,
+83 error error rolling back   code: 'UNKNOWN',
+83 error error rolling back   path: '\\\\fspaka02\\userdata5b$\\AL9075\\AppData\\npm\\node_modules\\gitbook-cli' }
