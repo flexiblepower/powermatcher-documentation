@@ -138,5 +138,5 @@ The bidUpdateCommand kicks of a `perfomUpdate()` which can vary depending on the
 So what effectively happens is that when an Agent (Concentrator/Auctioneer) is not very busy it will immediately process the bid and generate an event on its own; when things start to get really busy it will wait for some other messages to arrive and take those into account before generating its own event. Cooldown periods don't have to be long; think in the order of one second.
 
 ----------------------------------
-In an earlier version of the PowerMatcher we learned that oscillative behaviour could occur; to solve this problem we introduced bidNumbers. So each bid has a unique ID and each Agent can lookup the correct bid when receiving a priceUpdate. For more detailed information please turn to the [Oscillation](https://github.com/flexiblepower/powermatcher/wiki/Oscillation) section. 
+In an earlier version of the PowerMatcher we learned that oscillative behaviour could occur; to solve this problem we introduced bidNumbers. So each bid has a unique ID and each Agent can lookup the correct bid when receiving a priceUpdate. For more detailed information please turn to the [BidNumbers](BidNumbers.md) section. 
 

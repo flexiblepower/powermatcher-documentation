@@ -1,11 +1,16 @@
 # Monitoring with CSVLogger and KLE Stack
+
+This section provides a small tutorial on how to implement the KLE stack on top of the CSVLogger. The KLE stack will make it much easier to visually monitor the status of your cluster.
+
+![KLEstack]()
+
 ## KLE stack
 The KLE stack stands for [(K)ibana](http://www.elasticsearch.org/overview/kibana/), [(L)ogstash](http://logstash.net) and [(E)lastic Search](http://www.elasticsearch.org/) stack. The figure below represents the example/test PM monitoring setup.
-![](https://raw.githubusercontent.com/wiki/flexiblepower/powermatcher/pm-monitoring.jpg)
-First we have to configure a CSVLogger component in Felix web console. This logger will produce csv logfiles. A Logstash Agent will read and parse the log files to JSON events. The events are pushed to the Elastic Search database. With the Kibana frontend we are able to construct several monitoring dashboards.
+![](pm-monitoring.jpg)
+First we have to configure a CSVLogger component in Felix web console. This logger will produce CSV logfiles. A Logstash Agent will read and parse the log files to JSON events. The events are pushed to the Elastic Search database. With the Kibana frontend we are able to construct several monitoring dashboards.
 
 ## CSVLogger
-![](https://raw.githubusercontent.com/wiki/flexiblepower/powermatcher/configuration-csvlogger.png)
+![](configuration-csvlogger.png)
 
 ## Elastic Search
 - Download the latest version on http://www.elasticsearch.org/overview/elkdownloads/

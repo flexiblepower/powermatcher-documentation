@@ -1,2 +1,3 @@
-# Monitoring Power Matcher
-There are several ways to monitor a Power Matcher cluster. In this section we will give a brief overview. We will start with describing logging framework within Power Matcher. The logging framework support several adapters for different log formats and monitor options. We will describe the CSVLogger adaptor and the ElasticSearch adapter. We will describe an example with the KLE stack.
+# PowerMatcher Monitoring 
+
+There are several ways to monitor a PowerMatcher cluster. This section describes the logging framework within PowerMatcher. The logging framework supports several adapters for different log formats and monitoring options. The CSVLogger adaptor is the first implementation. A small tutorial is added that describes how to implement the KLE stack on top of the CSVLogger.

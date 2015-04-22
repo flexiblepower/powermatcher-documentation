@@ -18,8 +18,8 @@ Afterwards, please update the relevant Wiki documentation.
 ###Guidelines
 Before code is merged it needs to comply with a number of guidelines:  
 1. Code should be as complete as possible (No placeholders, TODO's or FIXME's)  
-2. right formatting; code should follow the FPAI coding guidelines  
+2. Right formatting; code should follow the [Coding Conventions](CodingConventions.md)  
 3. Fixed/added unit tests where applicable  
-4. Code needs to build in Gradle  
+4. Code needs to [build in Gradle](ContinuousIntegration.md)  
 5. Javadocs added where applicable  
 
