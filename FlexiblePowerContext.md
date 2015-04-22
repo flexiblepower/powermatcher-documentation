@@ -1,3 +1,5 @@
+# FlexiblePower Context
+
 The `FlexiblePowerContext` object will be provided by the runtime to each `Agent` through its `setContext()` method. This object can then be used to interact with the environment. Note that this environment could be simulated, such that the timer and scheduling run faster (or possible slower) than real-time.
 
 This object has several functionalities
