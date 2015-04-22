@@ -68,7 +68,7 @@ The MarketBasis registers:
 
 #Price: 
 
-The Auctioneer determines the Equilibrium Price. This price is the set point that optimizes the entire cluster. The price flows through every branch (stored in PriceUpdate Objects) and down to every end node, the Device Agent. The device agent maps this price to his prior published bid curve (see [[Equilibrium Price|Equilibrium]]) and determines its consumption or production set point.
+The Auctioneer determines the Equilibrium Price. This price is the set point that optimizes the entire cluster. The price flows through every branch (stored in PriceUpdate Objects) and down to every end node, the Device Agent. The device agent maps this price to his prior published bid curve (see [Equilibrium Price](Equilibrium.md)) and determines its consumption or production set point.
 
 Price is an immutable dataobject:
 

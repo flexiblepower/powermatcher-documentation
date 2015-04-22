@@ -1,6 +1,6 @@
 # BidNumbers
 
-We have implemented a feature that ties a bid(Number) to a returned Price. Why? so a Device Agent knows when receives a priceUpdate to which original bid(Number) it belonged. This feature is implemented to counter oscillative behaviour...
+We have implemented a feature that ties a bid(Number) to a returned Price, see the [Messages section](Messages.md). Why? so a Device Agent knows when receives a priceUpdate to which original bid(Number) it belonged. This feature is implemented to counter oscillative behaviour...
 
 -----------------------------------------------
 # Oscillation behaviour

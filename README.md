@@ -14,7 +14,7 @@ When supply and demand are equal (i.e. when the supply function and demand funct
 
 The same mechanism is used in the PowerMatcher.  **The PowerMatcher core application provides the market mechanism for the determination of the market equilibrium, while the devices work as actors for demand and/or supply.** Each device, whether this is a washing maschine, windmill, or industrial turbine can express his willingness to consume or produce energy in the form of a bid (a demand or supply _relationship_). All bids come together in the market mechanism of the PowerMatcher and result in an equilibrium price.
 
-# A small thought exercise
+# A Van Gogh painting
 
 Try to picture a normal auction where a potential buyer would bid on an object e.g. someone bidding on a Van Gogh painting. This process would iterate a couple of times because the buyer does not want to 'show all his cards' in order to get the cheapest price possible. 
 

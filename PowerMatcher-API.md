@@ -31,6 +31,4 @@ The class that handles all messages that go through the AgentEndpoint we have ca
 * This class makes sure that when an Agent generates a new Bid , the BaseAgentPoint turns the bid into a message BidUpdate and makes sure the BidUpdate has a unique bidNumber ([see BidNumbers](BidNumbers.md)).
 * This class will handle a priceUpdate
 
-----------------------------
 
-Agents don't communicate directly but through [Sessions](Session.md).

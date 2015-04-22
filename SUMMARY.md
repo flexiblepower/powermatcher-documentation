@@ -26,7 +26,7 @@
     * [Websockets](Websockets.md)
 * [Visualisation](ClusterVisualizer.md)
 * [Tests PowerMatcher](Tests.md)
-* [FPAI & PM integration](FPAI_PM.md)
+* [EF-Pi & PM integration](EFPi_PM.md)
 * [Working with OSGI](OSGi.md)
 * [PM tutorial](PMTutorial.md)
     * [Setting up the IDE](SettingUpTheIDE.md)
