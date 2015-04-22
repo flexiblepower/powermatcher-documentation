@@ -1,10 +1,14 @@
+# Peak Shaving
+
+PeakShaving is the capability of the PowerMatcher to make sure transformers or cables in the physical world are not over-exerted.
+
 The PeakShavingConcentrator extends the normal Concentrator and has some additional functionality: it can Peak Shave!
 
 # Peak Shaving Concentrator
 
 PeakShaving is done by setting a Ceiling and Floor bandwidth, which indicates the maximum Power flow that is allowed over that node. In real life a concentrator can represent a cable or transformer and can thus be alleviated of high stress by setting limits in the virtual world.
 
-Let's assume our earlier Aggregated Bid as shown in [[Aggregation|Aggregation]]:
+Let's assume our earlier Aggregated Bid as shown in [Aggregation](Aggregation):
 
 ![AggregatedBid](AggregatedBid1.png)
 
@@ -24,7 +28,7 @@ Instead, the PeakShavingConcentrator takes the Equilibrium Price, finds the **Ne
 
 # Technical Implementation
 
-The [[PeakShaving Concentrator|https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.peakshaving/src/net/powermatcher/peakshaving/PeakShavingConcentrator.java]] extends [[Concentrator|https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/concentrator/Concentrator.java]].
+The [PeakShaving Concentrator](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.peakshaving/src/net/powermatcher/peakshaving/PeakShavingConcentrator.java) extends [Concentrator](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.core/src/net/powermatcher/core/concentrator/Concentrator.java).
 
 In the Config Admin you can set the static `floor` and `ceiling` of the PeakShaving Concentrator:
 

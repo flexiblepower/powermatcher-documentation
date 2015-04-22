@@ -14,7 +14,7 @@
          * [Sessions](Session.md)
          * [Bids & Prices](DataObjects.md)
          * [Messages](Messages.md)
-    * [Advanced Topics](Features.md)
+    * [Advanced Topics](Advanced Topics.md)
          * [BidNumbers](BidNumbers.md)
 		 * [Events & Scheduling](Events-Scheduling.md)
 		 * [Peak Shaving](PeakShaving.md)  

@@ -1,7 +1,9 @@
-We have implemented a feature that ties a bid(Number) to a returned Price. Why?, so a Device Agent knows when receices a priceUpdate to which original bid(Number) it belonged. This feature is implemented to counter Oscillative behaviour...
+# BidNumbers
+
+We have implemented a feature that ties a bid(Number) to a returned Price. Why? so a Device Agent knows when receives a priceUpdate to which original bid(Number) it belonged. This feature is implemented to counter oscillative behaviour...
 
 -----------------------------------------------
-# Oscillative behaviour
+# Oscillation behaviour
 
 Without this feature the situation could happen that a Device Agent could act on the wrong price....and ultimately oscillative behaviour would occur. Let me explain with a small thought exercise:
 
@@ -136,4 +138,4 @@ Now when a Concentrator receives a returned priceUpdate it will retrieve the `Se
 
 --------------------------------------------------
 
-IMPORTANT: It is still possible that a Device Agent will never receive a priceUpdate in time for his new bidUpdate. This happens when the update interval of the Device Agent is much faster than the **Cooldown Period** of (multiple) Concentrator(s), see [[Events & Scheduling|Events & Scheduling]]. That is why we advice the developer of a Device Agent to adopt a minimum bidUpdate interval which is at least >> 5 * Cooldown period! 
+IMPORTANT: It is still possible that a Device Agent will never receive a priceUpdate in time for his new bidUpdate. This happens when the update interval of the Device Agent is much faster than the **Cooldown Period** of (multiple) Concentrator(s), see [Events & Scheduling](Events & Scheduling). That is why we advice the developer of a Device Agent to adopt a minimum bidUpdate interval which is at least >> 5 * Cooldown period! 

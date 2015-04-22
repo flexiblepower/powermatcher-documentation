@@ -1,0 +1,78 @@
+```
+    private final BaseMatcherEndpoint matcherPart = new BaseMatcherEndpoint() {
+        @Override
+        protected void performUpdate(AggregatedBid aggregatedBid) {
+            Bid bid = transformBid(aggregatedBid);
+            BidUpdate bidUpdate = publishBid(bid);
+            saveBid(aggregatedBid, bidUpdate);
+        };
+    };
+```
+Where `sentBids` is a LinkedList:
+
+```
+    private final Deque<SentBidInformation> sentBids = new LinkedList<SentBidInformation>();
+```
+
+The elements that are stored in `SentBids` are new objects called `SentBidInformation`. The `SentBidInformation` stores an `AggregatedBid` (the original incoming Bids, including their bidNumbers) and pairs it with the `BidUpdate` (the outgoing message, with its own bidNumber). 
+
+```
+    void saveBid(final AggregatedBid aggregatedBid, final BidUpdate sentBidUpdate) {
+        SentBidInformation info = new SentBidInformation(aggregatedBid, sentBidUpdate);
+
+        synchronized (sentBids) {
+            sentBids.add(info);
+
+            if (sentBids.size() > MAX_BIDS) {
+                LOGGER.warn("The number of generated bids is becoming very big, possible memory leak?");
+                while (sentBids.size() > MAX_BIDS) {
+                    sentBids.removeFirst();
+                }
+            }
+        }
+    }
+```
+Now when a Concentrator receives a returned priceUpdate it will retrieve the `SentBidInformation` with `retrieveAggregatedBid`, look up the original bidNumbers from the Bids that were received from the children, and consequently publish the price to each child with its corresponding bidNumber: `getOriginalBid()`.
+
+```
+    @Override
+    public void handlePriceUpdate(PriceUpdate priceUpdate) {
+        super.handlePriceUpdate(priceUpdate);
+
+        try {
+            SentBidInformation info = retrieveAggregatedBid(priceUpdate.getBidNumber());
+            Price price = transformPrice(priceUpdate.getPrice(), info);
+            matcherPart.publishPrice(price, info.getOriginalBid());
+        } catch (IllegalArgumentException ex) {
+            LOGGER.warn("Received a price update for a bid that I never sent, id: {}", priceUpdate.getBidNumber());
+        }
+    }
+```
+ The function `retrieveAggregatedBid()` is important because it also removes SentBidInformation-objects that reside in the past and will not be used anymore:
+
+```
+    private SentBidInformation retrieveAggregatedBid(int bidNumberReference) {
+        synchronized (sentBids) {
+            // First check if we have actually sent a bid with that number
+            boolean found = false;
+            for (SentBidInformation info : sentBids) {
+                if (info.getBidNumber() == bidNumberReference) {
+                    found = true;
+                }
+            }
+
+            // If we haven't, then throw an exception
+            if (!found) {
+                throw new IllegalArgumentException("No bid with bidNumber " + bidNumberReference + " is available");
+            }
+
+            // If we have, drop all older bids and return the found info
+            SentBidInformation info = sentBids.peek();
+            while (info.getBidNumber() != bidNumberReference) {
+                sentBids.removeFirst();
+                info = sentBids.peek();
+            }
+            return info;
+        }
+    }
+```
