@@ -1,3 +1,5 @@
+# Bids & Prices and other DataObjects
+
 The PowerMatcher protocol consists of few different Data Objects passed from one Agent to the other. Obviously there is the Bid and the Price, but these base objects can be defined in different ways. Remember that a Bid represents an entire bidcurve as shown in Figure 1:
 
 ![](FreezerBid.png)
