@@ -16,7 +16,7 @@
          * [Messages](Messages.md)
     * [Advanced Topics](Features.md)
          * [BidNumbers](BidNumbers.md)
-		 * [Events & Scheduling](Events & Scheduling.md)
+		 * [Events & Scheduling](Events-Scheduling.md)
 		 * [Peak Shaving](PeakShaving.md)  
 * [PowerMatcher Runtime](Runtime.md)
     * [Lifecycle](Lifecycle.md)
