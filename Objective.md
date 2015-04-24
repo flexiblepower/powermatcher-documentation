@@ -6,7 +6,7 @@ The Objective Agent interfaces with the business logic of an external applicatio
 
 **Figure 1 - Function of an ObjectiveAgent**
 
-For example, if you want the PowerMatcher cluster to serve as a Virtual Power Plant (VPP), NOT to balance itself, but instead have it produce or consume **a surplus** amount of energy. This means you have to push the PowerMatcher market out of balance and thus NOT forward the Equilibrium price, instead *manipulate* the price in the PowerMatcher market. This can be done using the Objective Agent.
+For example, if you want the PowerMatcher cluster to serve as a Virtual Power Plant (VPP), NOT to balance itself, but instead have it produce or consume **a surplus** amount of energy. This means you have to push the PowerMatcher market out of balance and NOT forward the Equilibrium price, instead *manipulate* the price in the PowerMatcher market. This can be done using the Objective Agent.
 
 ![](VPP.png)
 
@@ -31,7 +31,7 @@ the Auctioneer is observed.
 
 **Figure 4 - The Objective Agent observes the Auctioneer**
 
-When the Auctioneer constructs an `AggregatedBid` it will notify the ObjectiveAgent through the observer that a new 'AggregatedBid' has been created.
+When the Auctioneer constructs an `AggregatedBid` it will notify the ObjectiveAgent through the observer that a new `AggregatedBid` has been created.
 The ObjectiveAgent can use this information to construct his own Bid and influence the Auctioneer. The ObjectiveAgent bid will be send to the Auctioneer just like any other Agent, through the `AgentEndpoint`.
 
 ## Technical Implementation
