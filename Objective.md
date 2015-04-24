@@ -3,13 +3,14 @@
 The Objective Agent interfaces with the business logic of an external application on one side; and with the PowerMatcher on the other side. 
 
 ![](objective_cluster.png)
-**Figure 1 - Function of an ObjectiveAgent**
 
+**Figure 1 - Function of an ObjectiveAgent**
 
 For example, if you want the PowerMatcher cluster to serve as a Virtual Power Plant (VPP), NOT to balance itself, but instead have it produce or consume **a surplus** amount of energy. This means you have to push the PowerMatcher market out of balance and thus NOT forward the Equilibrium price, instead *manipulate* the price in the PowerMatcher market. This can be done using the Objective Agent.
 
 ![](VPP.png)
-**Figure 1 - A VPP Objective Agent will manipulate the price to have the cluster produce or consume energy**
+
+**Figure 2 - A VPP Objective Agent will manipulate the price to have the cluster produce or consume energy**
 
 This is just one example for using the Objective Agent, an Objective Agent could also be used to feed another Agent with forecasts.
 
@@ -31,19 +32,19 @@ The ObjectiveAgent can use this information to construct his own Bid and influen
 
 ## Technical Implementation
 
-```
-The Auctioneer publishes an `AggregatedBidEvent`
+The Auctioneer publishes an `AggregatedBidEvent`:
 
+```
         @Override
         public void run() {
             final Agent.Status currentStatus = getStatus();
             try {
                 if (currentStatus.isConnected()) {
                     AggregatedBid aggregatedBid = bidCache.aggregate();
-                    **publishEvent(new AggregatedBidEvent(currentStatus.getClusterId(),
+                    publishEvent(new AggregatedBidEvent(currentStatus.getClusterId(),
                                                         getAgentId(),
                                                         now(),
-                                                        aggregatedBid));**
+                                                        aggregatedBid));
                     performUpdate(aggregatedBid);
                 }
             } catch (RuntimeException e) {
