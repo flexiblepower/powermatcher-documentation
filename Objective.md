@@ -14,18 +14,22 @@ For example, if you want the PowerMatcher cluster to serve as a Virtual Power Pl
 
 This is just one example for using the Objective Agent, an Objective Agent could also be used to feed another Agent with forecasts.
 
+![](forecast.png)
+
+**Figure 3 - A Forecast Objective Agent will manipulate the Agent to achieve better long term results**
+
 ---------------------------------------------------------------
 
 ## The Objective Agent 
 
-The Objective Agent implements the `AgentObserver` the configuation parameter which agent to observe is set in OSGi.
+The Objective Agent implements the `AgentObserver` the configuration parameter which agent to observe is set in OSGi.
 
 In the [Example Objective Agent](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.examples/src/net/powermatcher/examples/ObjectiveAgent.java)
 the Auctioneer is observed.
 
 ![](objectiveEvent.png)
 
-**Figure 3 - The Objective Agent observes the Auctioneer**
+**Figure 4 - The Objective Agent observes the Auctioneer**
 
 When the Auctioneer constructs an `AggregatedBid` it will notify the ObjectiveAgent through the observer that a new 'AggregatedBid' has been created.
 The ObjectiveAgent can use this information to construct his own Bid and influence the Auctioneer. The ObjectiveAgent bid will be send to the Auctioneer just like any other Agent, through the `AgentEndpoint`.
