@@ -9,13 +9,13 @@ This session uses the configuration admin provided by the Felix web console. In 
 We will do this by following the following steps:
 
   1. Starting up the OSGI server
-  2. Configure Actioneer
+  2. Configure Auctioneer
   3. Configure Concentrator
   4. Configure PVAgent
 
 ## Starting up PowerMatcher in OSGI
 
-The PowerMatcher repository has an `examples` bundle, containing example implementations of the core and API classes and interfaces. In this example, our device agents will be the `PVPanel` and the `Freezer` classes. More information on how to build your own device agent can be found in the [Creation of a device agent](CreationOfDeviceAgent.md) section.
+The PowerMatcher repository has an `examples` bundle, containing example implementations of the core and API classes and interfaces. In this example, our device agents will be the `PVPanel` and the `Freezer` classes. More information on how to build your own device agent can be found in the [Create a Device Agent](CreateADeviceAgent.md) section.
 
 In eclipse, open `examples.bndrun` of the `net.PowerMatcher.examples` project. Click on `Run OSGi` to fire up the Apache Felix service.
 
@@ -87,7 +87,7 @@ The `concentrator` aggregates the bids and sends it to the `auctioneer`. The agg
 ```
 DEBUG n.p.core.auctioneer.Auctioneer - Received from session [concentrator:auctioneer] bid update [ArrayBid{bidNumber=1, demand[]{-6.157E2,-6.165E2,-6.174E2,-6.182E2,-6.191E2,-6.199E2,-6.208E2,-6.217E2,-6.225E2,-6.234E2,-6.242E2,-6.251E2,-6.259E2,-6.268E2,-6.276E2,-6.285E2,-6.293E2,-6.302E2,-6.31E2,-6.319E2,-6.327E2,-6.336E2,-6.344E2,-6.353E2,-6.361E2,-6.37E2,-6.378E2,-6.387E2,-6.395E2,-6.404E2,-6.412E2,-6.421E2,-6.429E2,-6.438E2,-6.446E2,-6.455E2,-6.463E2,-6.472E2,-6.481E2,-6.489E2,-6.498E2,-6.506E2,-6.515E2,-6.523E2,-6.532E2,-6.54E2,-6.549E2,-6.557E2,-6.566E2,-6.574E2,-6.583E2,-6.591E2,-6.6E2,-6.608E2,-6.617E2,-6.625E2,-6.634E2,-6.642E2,-6.651E2,-6.659E2,-6.668E2,-6.676E2,-6.685E2,-6.693E2,-6.702E2,-6.71E2,-6.719E2,-6.727E2,-6.736E2,-6.745E2,-6.753E2,-6.762E2,-6.77E2,-6.779E2,-6.787E2,-6.796E2,-6.804E2,-6.813E2,-6.821E2,-6.83E2,-6.838E2,-6.847E2,-6.855E2,-6.864E2,-6.872E2,-6.881E2,-6.889E2,-6.898E2,-6.906E2,-6.915E2,-6.923E2,-6.932E2,-6.94E2,-6.949E2,-6.957E2,-6.966E2,-6.974E2,-6.983E2,-6.991E2,-7E2}, MarketBasis{commodity=electricity, currency=EUR, minimumPrice=0, maximumPrice=1, priceSteps=100}}] 
 ```
-The `auctioneer` receives the aggreagated bid from the `concentrator` through the `concentrator::auctioneer` session.
+The `auctioneer` receives the aggregated bid from the `concentrator` through the `concentrator::auctioneer` session.
 ```
 DEBUG n.p.core.auctioneer.Auctioneer - New price: PriceUpdate [Price{priceValue=0}, bidNr=2], session concentrator:auctioneer
 ```
