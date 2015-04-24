@@ -1,4 +1,4 @@
-# Creating a Device Agent
+# Create a Device Agent
 
 In this part of the tutorial, you will learn how to create your own Device Agent. The device we will be creating is a WindTurbine. It will be a simulated WindTurbine which is not actually connected to a physical device. Therefore we won't receive actual Flexibility Information [see Device Agent Bids](Bids.md), we will simulate this output.
 

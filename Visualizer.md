@@ -7,7 +7,7 @@ On this page, we will start up the visualizer, create the same cluster we create
 
 ## Using the visualizer
 
-For this tutorial, we won't use the `examples.bndrun`. The PowerMatcher repository has an `net.PowerMatcher.visualisation` bundle, open the `visualisation.bndrun` file. Click on `Run OSGi` to fire up the Apache Felix service. Now go to [http://localhost:8080/system/console/configMgr](http://localhost:8080/system/console/configMgr) 
+For this tutorial, we won't use the `examples.bndrun`. The PowerMatcher repository has an `net.PowerMatcher.visualisation` bundle, open the `visualisation.bndrun` file. Click on `Run OSGi` to fire up the Apache Felix service. Now go to [http://localhost:8080/system/console/configMgr](http://localhost:8080/system/console/configMgr) in your browser.
 
 ### Starting up
 

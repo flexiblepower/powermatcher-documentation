@@ -33,7 +33,7 @@
     * [Setting up the IDE](SettingUpTheIDE.md)
     * [Simple PM cluster](SimplePMCluster.md)
     * [Advanced PM cluster](AdvancedPMCluster.md)
-    * [Creation of a Device Agent](CreationOfDeviceAgent.md)
+    * [Create a Device Agent](CreateADeviceAgent.md)
     * [Using the Visualizer](Visualizer.md)
 * [Contributing to the community](Contributing.md)
 	* [Branching](Branching.md)
