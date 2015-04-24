@@ -34,18 +34,23 @@ Don't forget to call the `super.handlePriceUpdate()`
     }
 ```
 
+## Adding Fields
     
 Now let's create some fields that we can use to simulate our Device:
 
 ```
 	//Important fields to assign the Agent's Logger, Agent configuration and scheduler
+	
     private static final Logger LOGGER = LoggerFactory.getLogger(PVPanelAgent.class);
 
 	private Config config;
 	
     private ScheduledFuture<?> scheduledFuture;
+	
+	
 
 	//Variables that will be needed for simulating our WindTurbine bid
+	
 	private static Random generator = new Random();
 	
     private double minimumDemand;
@@ -63,7 +68,7 @@ To send Bids, we will implement `doBidUpdate()`. The basic functionality of this
 
 1. Check the status if the Agent is still connected
 2. Use the generator to create a random demand, based on the `minimumDemand` and the  `maximumDemand`
-2. Create a flat Bid using the `flatDemand()` More complex shapes can be constructed using the Builder pattern, see the [Freezer Example Device Agent](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.examples/src/net/powermatcher/examples/Freezer.java).
+2. Create a flat Bid using the `flatDemand()`. More complex shapes can be constructed using the Builder pattern, see the [Freezer Example Device Agent](https://github.com/flexiblepower/powermatcher/blob/master/net.powermatcher.examples/src/net/powermatcher/examples/Freezer.java).
 3. Publish the Bid using `publishBid()` it will send the Bid to its `MatcherEndpoint` through the `Session`. 
 
 ```
@@ -85,7 +90,7 @@ A Price is received from the MatcherEndpoint/Parent Agent w the `handlePriceUpda
    @Override
     public synchronized void handlePriceUpdate(PriceUpdate priceUpdate) {
         super.handlePriceUpdate(priceUpdate);
-        // Nothing to control for a PV panel
+        // Nothing to control for a WindTurbine
 ```
 
 # OSGI
@@ -94,7 +99,7 @@ Last up are the OSGI configuration, annotations and methods.
 
 ## The Config Interface
 
-We will start by creating an inner interface called Config. (It doesn't have to be called Config, but PowerMatcher uses that name.) This class will be the `Service Factory object` and OSGi will use it to create new instances with the given Parameters.
+We will start by creating an inner interface called Config. It doesn't have to be called Config, but PowerMatcher uses that name. This class will be the `Service Factory object` and OSGi will use it to create new instances with the given Parameters.
 
 A `WindTurbine` instance needs 5 properties: 
 
@@ -324,7 +329,7 @@ public class WindTurbine
     @Override
     public synchronized void handlePriceUpdate(PriceUpdate priceUpdate) {
         super.handlePriceUpdate(priceUpdate);
-        // Nothing to control for a PV panel
+        // Nothing to control for a WindTurbine
     }
 
     /**
