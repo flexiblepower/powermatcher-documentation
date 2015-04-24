@@ -250,7 +250,7 @@ public class WindTurbine
     private Config config;
 
     public static interface Config {
-        @Meta.AD(deflt = "pvpanel", description = "The unique identifier of the agent")
+        @Meta.AD(deflt = "windturbine", description = "The unique identifier of the agent")
         String agentId();
 
         @Meta.AD(deflt = "concentrator",

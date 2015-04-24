@@ -47,5 +47,5 @@ Please read [Data Objects](DataObjects.md) section to understand how Bids and Pr
 # Technical Implementation
 
 For a detailed explanation and walkthrough on the technical implementation of a Device Agent the reader is referred to the tutorial section:
-[Creation of a Device Agent](CreationOfDeviceAgent.md)
+[Create a Device Agent](CreateADeviceAgent.md)
 

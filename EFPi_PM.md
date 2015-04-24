@@ -25,4 +25,4 @@ The EFI defines four abstract type of devices in a holistic energy system. These
 
 What this means is that the PowerMatcher can get away with 4 simple agents that map to each of these abstractions. For instance in the case of the Timeshifter; the PowerMatcher doesn't care whether it is an industrial heater or washing machine. To the PowerMatcher the device is a "Timeshifter" and accordingly has some business logic to develop a Bid that represents the Timeshifter. 
 
-The device agents that specifically map to the EF-Pi abstractions can be found in this [Repo](https://github.com/flexiblepower/fpai-apps/tree/development/net.powermatcher.fpai.controller/src/net/powermatcher/fpai/agents)
+The device agents that specifically map to the EF-Pi abstractions can be found in this [Repo](https://github.com/flexiblepower/fpai-apps/tree/development/net.powermatcher.fpai.controller/src/net/powermatcher/fpai/agents).

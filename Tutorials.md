@@ -10,6 +10,6 @@ We have added tutorials to get you started; more will be added in the future.
 
 * [Advanced PM cluster](AdvancedPMCluster.md): Add EF-Pi to PowerMatcher.
 
-* [Creation of a device agent](CreationOfDeviceAgent.md): Learn to create a simple Device Agent: A Wind Turbine Agent will be created as a demonstration.
+* [Create a Device Agent](CreateADeviceAgent.md): Learn to create a simple Device Agent: A WindTurbine Agent will be created as a demonstration.
 
 * [Using the Visualizer](Visualizer.md): Learn to use the PowerMatcher cluster visualizer.
