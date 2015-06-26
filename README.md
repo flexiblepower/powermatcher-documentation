@@ -1,6 +1,7 @@
 # Welcome
 
 *For those interested in general information on the Why and How of PowerMatcher please dive into [the PowerMatcherSuite website](http://flexiblepower.github.io/). 
+
 PowerMatcher documentation related questions or improvement suggestions? report them [here](https://github.com/flexiblepower/powermatcher-documentation/issues/new?title=Question/Suggestion:My%20Title&body).*
 
 The PowerMatcher is a smart grid coordination mechanism. It balances distributed energy resources (DER) and (flexible) loads. It can also be herded among Demand Response systems, but with a radical new vision. A vision that we call Smart Transactive Energy.
