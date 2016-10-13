@@ -1,0 +1,11 @@
+{
+    "gitbook": "2.x.x",
+    "plugins": ["edit-link"],
+    "pluginsConfig": {
+            "edit-link": {
+                "base": 
+"https://github.com/flexiblepower/powermatcher-documentation/edit/master/",
+                "label": "Edit This Page"
+            }
+    }
+}
