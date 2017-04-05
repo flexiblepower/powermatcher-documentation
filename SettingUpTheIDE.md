@@ -3,7 +3,7 @@
 In this tutorial we will explain how to set up your development environment.
 
 ## Installing the Java Development Kit
-First of all, the Java Development Kit (a.k.a. the JDK) needs to be installed. PowerMatcher is developed in Java  version 1.7, so at least version 1.7 of the JDK needs to be present. At the moment we would not recommend using Java 8.
+First of all, the Java Development Kit (a.k.a. the JDK) needs to be installed. PowerMatcher is developed in Java version 1.7, so at least version 1.7 of the JDK needs to be present. At the moment we would not recommend using Java 8.
 
 To check if you have installed the JDK you can execute the command `javac -version` on the command line. Windows users can access the command line through Start menu, press Run, type `cmd` and click the OK button. If the JDK is installed you should see the version number. If the JDK is not installed you should get a warning indicating that the command could not be found.
 
@@ -75,11 +75,11 @@ Go to `Window` -> `Preferences`. Then, on the left, open `Java` -> `Code Style` 
 ![import_xml](import_xml.png)
 
 ### Importing the projects
-The repository you checked out already contains some projects. We have to tell Eclipse to search for those repositories first. You can do this by going to `File` and than `Import`. Select `Existing Projects into Workspace` from the `General` directory and click the `Next` button.
+The repository you checked out already contains some projects. We have to tell Eclipse to search for those repositories first. You can do this by going to `File` and then `Import`. Select `Existing Projects into Workspace` from the `General` directory and click the `Next` button.
 
-Click on the `Browse` button on top of the screen. It will automatically go to the your workspace directory. Click `OK` to select your workspace directory. Select all the projects and click `Finish`. Eclipse will add the projects to the Package explorer on the left of the screen.
+Click on the `Browse` button on top of the screen. It will automatically go to your workspace directory. Click `OK` to select your workspace directory. Select all the projects and click `Finish`. Eclipse will add the projects to the Package explorer on the left of the screen.
 
-Finally, we have to select the Bndtools perspective. A perspective is a configuration of the Eclipse user interface which is made for a specific tasks. You can select a perspective by clicking `Window`, `Open perspective` and than `Other...`. Double click on `Bndtools` to open the Bndtools perspective. You can close the welcome window of eclipse, and tick the box not to show again.
+Finally, we have to select the Bndtools perspective. A perspective is a configuration of the Eclipse user interface which is set up for a specific task. You can select a perspective by clicking `Window`, `Open perspective` and then `Other...`. Double click on `Bndtools` to open the Bndtools perspective. You can close the welcome window of Eclipse, and tick the box not to show again.
 
 ## Next
 You're all set to start developing! Be sure to check out [OSGi, Bndtools and the Felix Web Console](OSGi.md) and [Coding Conventions](CodingConventions.md) before developing.
