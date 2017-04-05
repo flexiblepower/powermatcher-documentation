@@ -43,7 +43,7 @@ Click on the + button at the end of the `Auctioneer config` line to create a new
 
 ### Configuring the Concentrator
 
-A `Concentrator` instance is created in the same way as the `Concentrator`. Keep the default values, except for `Price update rate`, which will be set to `10` seconds.
+A `Concentrator` instance is created in the same way as the `Auctioneer`. Keep the default values, except for `Price update rate`, which will be set to `10` seconds.
 
 ![Configuring the Concentrator](concentrator_config.png)
 
@@ -101,10 +101,10 @@ DEBUG n.PowerMatcher.examples.PVPanelAgent - Received price update [PriceUpdate 
 ```
 The `pvpanel` recieves an updated price from the `concentrator` and notifies all of its observers
 
-## Adding a second PVPanel
+## Adding a Freezer
 
-Adding a second PVPanel to our cluster is easy. Go back to the configuration manager and once again, click on the + button on the `Freezer config` line. This one will also have a timeout of 10 seconds. As usual, you can leave the rest of the defaults.
+Adding a Freezer is easy. Go back to the configuration manager and once again, click on the + button on the `Freezer config` line. This one will also have a timeout of 10 seconds. As usual, you can leave the rest of the defaults. You can add a second PVPanel just as easily by following the same steps as for the first PVPanel again.
 
 ![Configuring the Freezer](pvpanel2_config.png)
 
-Now you have a cluster with both a PvPanel and a Freezer as device Agents
+Now you have a cluster with both two PvPanels and a Freezer as device Agents.
