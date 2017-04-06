@@ -50,4 +50,4 @@ The Auctioneer's main function `performUpdate()` is activated and calls `calcula
 
 ```
 
-For more detailed information on determining the equilibrium price please continue reading in the [Javadoc]().
+For more detailed information on determining the equilibrium price please continue reading in the [Javadoc](http://fan-ci.sensorlab.tno.nl/builds/powermatcher/master/LATEST/javadoc/).
