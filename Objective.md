@@ -6,7 +6,7 @@ The Objective Agent interfaces with the business logic of an external applicatio
 
 **Figure 1 - Function of an ObjectiveAgent**
 
-For example, if you want the PowerMatcher cluster to serve as a Virtual Power Plant (VPP), NOT to balance itself, but instead have it produce or consume **a surplus** amount of energy. This means you have to push the PowerMatcher market out of balance and NOT forward the Equilibrium price, instead *manipulate* the price in the PowerMatcher market. This can be done using the Objective Agent.
+For example, suppose you want the PowerMatcher cluster to serve as a Virtual Power Plant (VPP), NOT to balancing itself, but instead producing or consuming **a surplus** amount of energy. To achieve this you need to push the PowerMatcher market out of balance, away from the Equilibrium price, by *manipulating* the price in the PowerMatcher market. This can be done using the Objective Agent.
 
 ![](VPP.png)
 
