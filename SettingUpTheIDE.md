@@ -75,7 +75,7 @@ Go to `Window` -> `Preferences`. Then, on the left, open `Java` -> `Code Style` 
 ![import_xml](import_xml.png)
 
 ### Importing the projects
-The repository you checked out already contains some projects. We have to tell Eclipse to search for those repositories first. You can do this by going to `File` and then `Import`. Select `Existing Projects into Workspace` from the `General` directory and click the `Next` button.
+The repository you checked out already contains some projects. We have to tell Eclipse to search for those projects first. You can do this by going to `File` and then `Import`. Select `Existing Projects into Workspace` from the `General` directory and click the `Next` button.
 
 Click on the `Browse` button on top of the screen. It will automatically go to your workspace directory. Click `OK` to select your workspace directory. Select all the projects and click `Finish`. Eclipse will add the projects to the Package explorer on the left of the screen.
 
